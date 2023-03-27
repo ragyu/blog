@@ -87,24 +87,24 @@ header a:hover {
   font-size: 20px;
 }
 
-/* Newsletter */
+/* event */
 
-#newsletter {
+#event {
   background-color: #35424a;
   padding: 15px;
   color: white;
 }
 
-#newsletter h1 {
+#event h1 {
   float: left;
 }
 
-#newsletter form {
+#event form {
   float: right;
   margin-top: 15px;
 }
 
-#newsletter input[type='email'] {
+#event input[type='email'] {
   padding: 4px;
   height: 25px;
   width: 250px;
@@ -142,10 +142,31 @@ aside#sidebar {
   margin-top: 10px;
 }
 
+aside#downbar {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
 /* Main-col */
 article#main-col {
   float: left;
-  width: 65%;
+  width: 80%;
+}
+
+/*
+article#main-col boxes {
+  margin-top: 20px;
+}
+*/
+
+article#main-col .box {
+  float: left;
+  width: 30%;
+  height: 300px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 /* Service */
@@ -191,17 +212,68 @@ footer {
     padding-bottom: 20px;
   }
 
-  #newsletter button,
+  #event button,
   .quote button,
   header li {
     display: block;
     width: 100%;
   }
 
-  #newsletter form input[type='email'],
+  #event form input[type='email'],
   .quote input,
   .quote textarea {
     width: 100%;
     margin-bottom: 5px;
   }
+}
+
+#kCalendar {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#kCalendar #header {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+#kCalendar .button {
+  color: #000;
+  text-decoration: none;
+}
+
+#kCalendar table {
+  width: 250px;
+  height: 200px;
+}
+#kCalendar caption {
+  display: none;
+}
+
+#kCalendar .sun {
+  text-align: center;
+  color: deeppink;
+}
+#kCalendar .mon {
+  text-align: center;
+}
+#kCalendar .tue {
+  text-align: center;
+}
+#kCalendar .wed {
+  text-align: center;
+}
+#kCalendar .thu {
+  text-align: center;
+}
+#kCalendar .fri {
+  text-align: center;
+}
+#kCalendar .sat {
+  text-align: center;
+  color: deepskyblue;
 }
